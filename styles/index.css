@@ -13,14 +13,23 @@ li {
 
 body {
     font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "landingBlock"
+    "aboutUs"
+    "gallery"
+    "goods"
+    "footer";
     /* background-color: aqua; */
 }
 
-header {
-    width: 100%;
+.page__header {
+    grid-area: header;
     background: #000;
     opacity: 0.5;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 .header__logo {
@@ -28,12 +37,15 @@ header {
     font-weight: 600;
     font-size: 24px;
     cursor: pointer;
-    margin-top: 25px;
+    /* margin-top: 25px; */
     margin-left: 2%;
 }
 
 nav {
-    margin-top: 25px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 20px;
+    /* margin-top: 25px; */
     margin-left: 64%;
 }
 
