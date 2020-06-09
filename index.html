@@ -6,6 +6,7 @@
     <title>CakeCraft - главная</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles/index.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/header.css'>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script src='scripts/main.js'></script>
 </head>
@@ -15,7 +16,7 @@
         <p class="header__logo">CakeCraft</p>
         <nav class="header__nav">
             <a href="#head">Главная</a>
-            <a href="allGoods.html">Товары</a>
+            <a href="catalog.html">Товары</a>
             <a href="" class="img-link"><img src="media/images/icons/search.png" width="32" height="32" alt="Поиск"></a>
             <a href="" class="img-link"><img src="media/images/icons/bascket.png" width="32" height="32" alt="Корзина"></a>
         </nav>
@@ -23,41 +24,55 @@
 
     <main class="page__main">
         <div class="landing__part">
-            
+            <h1 class="landing__h1">Мы - первые в Хабаровске</h1>
+            <div class="landing__text">создаем десерты с использованием технологий молекулярной кухни</div>
+            <a href ="" class="landing__more">Подробнее</a>
+            <a href="" class="landing__order">Сделать заказ</a>
         </div>
 
         <article class="about__us">
-            <h1 id="title">О нас</h1>
-            <p id="mainText">CakeCraft производит кондитерскую продукцию начиная с 2017 года. Все это время мы стремились получить наивысшее качество и вкус нашей продукции, и мы смогли добиться этого.</p>
-            <p id="mainText">Мы производим муссовые десерты, ПП-десерты, а также нечто новое для нашего города - десерты с использованием технологий молекулярной кухни, которая придаст вашим блюдам незабываемые вкусы, уникальнейшую подачу и море эмоций.</p>
+            <h1 class="page__titles">О нас</h1>
+            <div class="page__text">CakeCraft производит кондитерскую продукцию начиная с 2017 года. Все это время мы стремились получить наивысшее качество и вкус нашей продукции, и мы смогли добиться этого.</div>
+            <div class="deco__element"></div>
+            <div class="page__text">Мы производим муссовые десерты, ПП-десерты, а также нечто новое для нашего города - десерты с использованием технологий молекулярной кухни, которая придаст вашим блюдам незабываемые вкусы, уникальнейшую подачу и море эмоций.</div>
         </article>
 
         <article class="gallery">
-            <h1 id="title">Галерея</h1>
+            <h1 class="page__titles">Галерея</h1>
+            <img class="gallery__slider" src="media/images/main/image3.jpg" alt="Изображение_галерея" width="50%" height="50%">
         </article>
 
         <article class="goods">
-            <div id="imageFrame1"></div>
-            <div id="goodFrame1">
-                <h2>Торты</h2>
-                <p class="mainText">Муссовые, бисквитные, тарты и другие виды тортов</p>
+            <div class="image__frame_cake"></div>
+            <div class="text__frame_right">
+                <h2 class="page__titles_h2">Торты</h2>
+                <p class="page__text_goods">Муссовые, бисквитные, тарты и другие виды тортов</p>
             </div>
-            <div id="imageFrame2"></div>
-            <div id="goodFrame2">
-                <h2>Эклеры</h2>
-                <p class="mainText">Выберите глазурь и начинку эклера для получения новых вкусовых ощущений</p>  
+            <div class="text__frame_left">
+                <h2 class="page__titles_h2">Эклеры</h2>
+                <p class="page__text_goods">Выберите глазурь и начинку эклера для получения новых вкусовых ощущений</p>  
             </div>
-            <div id="imageFrame3"></div>
-            <div id="goodFrame3">
-                <h2>Эксперименты</h2>
-                <p class="mainText">Десерты с использованием технологий молекулярной кухни</p>  
+            <div class="image__frame_ecl"></div>
+            <div class="image__frame_exp"></div>
+            <div class="text__frame_right">
+                <h2 class="page__titles_h2">Эксперименты</h2>
+                <p class="page__text_goods">Десерты с использованием технологий молекулярной кухни</p>  
             </div>
-            <a href="#goods">Посмотреть всё</a>
         </article>
+        <div class="bg__container">
+            <a class="goods__button" href="#goods">Посмотреть всё</a>
+        </div>
+        
     </main>
 
     <footer class="page__footer">
-
+        <img src="media/images/main/decor.png" alt="Декор" width="100%" height="100%">
+        <div class="social__media">
+            <a href="https://vk.com">1</a>
+            <a href="https://instagram.com">2</a>
+            <a href="https://twitter.com">3</a>
+        </div>
+        <div class="info__data">123</div>
     </footer>
 </body>
 </html>

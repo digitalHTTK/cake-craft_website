@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page__product {
+    padding-top: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.page__title {
+    font-size: 48px;
+    font-weight: 600;
+    position: relative;
+    height: max-content;
+}
+
+.page__title::before {
+    content: "";
+    display: block;
+    width: 232px;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    top: calc(100% + 5px);
+}
+
+.page__title::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: #000;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.page__descr {
+    display: flex;
+    flex-flow: row;
+    margin-top: 50px;
+}
+
+.descr__image {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    min-width: 270px;
+    max-width: 270px;
+    height: 270px;
+}
+
+.descr__text {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    align-self: center;
+    justify-content: center;
+    padding-left: 28px;
+    height: 100%;
+}
+
+.page__makeup {
+
+}
+
+.page__cards {
+    display: grid;
+    grid-gap: 28px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.page__card {
+    display: flex;
+    align-items: center;
+    height: 140px;
+    
+}
+
+.card__image {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    min-width: 140px;
+    max-width: 140px;
+    height: 140px;
+}
+
+.card__other {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    align-self: center;
+    justify-content: center;
+    padding-left: 28px;
+    padding-right: 42px;
+    background: #FFC16B;
+    width: 100%;
+    height: 100%;
+}
+
+.card__other > div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto max-content;
+}
+
+.card__count {
+    background: #FFEACD;
+    border: none;
+}
+
+.card__count:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .page__card {
+        flex-flow: column;
+        height: 500px;
+    }
+    .card__image {
+        min-height: 350px;
+        max-width: 100%;
+        min-width: 100%;
+        height: 100%;
+        background-position: 50% 5%;
+    }
+    .card__other {
+        padding-left: 28px;
+        padding-right: 28px;
+        align-items: center;
+    }
+    .card__descr {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .page__card {
+        height: 600px;
+    }
+}

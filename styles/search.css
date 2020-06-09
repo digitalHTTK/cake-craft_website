@@ -1,0 +1,15 @@
+.page__searchbar {
+    width: 100%;
+    height: 58px;
+    border: none;
+    background: #FFF6B7;
+    padding-left: 68px;
+    background-image: url("../media/images/icons/searchbar.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+.page__searchbar:focus {
+    outline: none;
+}

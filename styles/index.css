@@ -13,56 +13,292 @@ li {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "landingBlock"
-    "aboutUs"
-    "gallery"
-    "goods"
-    "footer";
-    /* background-color: aqua; */
 }
 
-.page__header {
-    grid-area: header;
-    background: #000;
-    opacity: 0.5;
-    display: grid;
-    grid-template-columns: auto auto;
+.landing__part {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 50px;
+    box-sizing: border-box;
+    height: 686px;
+    width: 100%;
+    background-image: url(../media/images/main/image1.jpg);
+    background-repeat: no-repeat;
+    background-position: 40% 50%;
+    background-size: cover;
 }
 
-.header__logo {
+.landing__h1 {
+    text-align: center;
+    font-size: 64px;
+    width: 564px;
     color: #fff;
+    height: max-content;
+    position: relative;
+}
+
+.landing__text {
+    text-align: center;
+    font-size: 24px;
+    width: 564px;
+    margin: 60px 0px 30px 0px;
+    height: max-content;
+    color: #fff;
+}
+
+.landing__more, .landing__order {
+    display: block;
+    width: 416px;
+    padding: 10px 0px;
+    margin-right: 74px;
+    background: #FCDA7C;
+    height: max-content;
+    text-align: center;
+    color: black;
     font-weight: 600;
     font-size: 24px;
-    cursor: pointer;
-    /* margin-top: 25px; */
-    margin-left: 2%;
 }
 
-.header__nav {
+.landing__order {
+    margin-top: 30px;
+}
+
+.landing__h1::before {
+    content: "";
+    display: block;
+    width: 232px;
+    height: 3px;
+    background: #F2A477;
+    position: absolute;
+    top: calc(100% + 28px);
+    left: calc(50% - 116px);
+}
+
+.landing__h1::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: #F2A477;
+    position: absolute;
+    transform: rotate(45deg);
+    top: calc(100% + 24px);
+    left: calc(50% - 6px);
+}
+
+.about__us {
+    margin: 32px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page__titles {
+    text-align: center;
+    font-size: 64px;
+
+    width: 80%;
+    height: max-content;
+    position: relative;
+}
+
+.page__titles::before {
+    content: "";
+    display: block;
+    width: 386px;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    top: calc(100% + 28px);
+    left: calc(50% - 193px);
+}
+
+.page__titles::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: #000;
+    position: absolute;
+    transform: rotate(45deg);
+    top: calc(100% + 24px);
+    left: calc(50% - 6px);
+}
+
+.page__text {
+    text-align: center;
+    font-size: 24px;
+    width: 80%;
+    margin: 30px 0px 30px 0px;
+    height: max-content;
+}
+
+.page__titles ~ .page__text {
+    margin: 60px 0px 30px 0px;
+}
+
+.page__text ~ .page__text {
+    margin: 30px 0px 30px 0px;
+}
+
+.deco__element {
+    position: relative;
+}
+
+.deco__element::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: #000;
+    position: absolute;
+    transform: rotate(45deg);
+    left: calc(50% - 18px);
+}
+
+.deco__element::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: #000;
+    position: absolute;
+    transform: rotate(45deg);
+    left: calc(50% + 18px);
+}
+
+.gallery {
+    padding: 32px;
+    margin-top: 32px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    background: #FFC16B;
+}
+
+.gallery > .page__titles {
+    color: #fff;
+}
+
+.gallery > .page__titles::before {
+    background: #fff;
+}
+
+.gallery > .page__titles::after {
+    background: #fff;
+}
+
+.gallery__slider {
+    margin-top: 64px;
+}
+
+.goods {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-column-gap: 20px;
-    /* margin-top: 25px; */
-    margin-left: 64%;
+    margin: 50px 160px 90px 160px;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, max-content);
+    /* margin: 0% 12% 0% 12%; */
 }
 
-.page__header a {
-    color: #fff;
+.text__frame_right, .text__frame_left {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+}
+
+.bg__container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.goods__button {
+    display: block;
+    width: 416px;
+    padding: 10px 0px;
+    background: #FCDA7C;
+    height: max-content;
     text-align: center;
-    font-weight: 300;
-    font-size: 18px;
-    padding: 12px 30px;
+    color: black;
+    font-weight: 600;
+    font-size: 24px;
 }
 
-.page__header .img-link {
-    color: #fff;
+.page__footer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 160px 90px 160px;
+}
+
+.image__frame_cake {
+    background-image: url(../media/images/main/image_cake.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    background-size: cover;
+    height: 350px;
+}
+
+.image__frame_exp {
+    background-image: url(../media/images/main/image_exp.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    background-size: cover;
+    height: 350px;
+}
+
+.image__frame_ecl {
+    background-image: url(../media/images/main/image_ecl.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    background-size: cover;
+    height: 350px;
+}
+
+@media screen and (max-width: 700px) {
+    .landing__part {
+        padding-right: 0px;
+        align-items: center;
+    }
+    .landing__more, .landing__order {
+        margin-right: 0px;
+        width: 70%;
+    }
+    .landing__h1 {
+        width: 240px;
+        font-size: 32px;
+    }
+    .landing__text {
+        width: 70%;
+    }
+    .goods {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        
+    }
+    .goods > div:nth-child(1) {order: 0;}
+    .goods > div:nth-child(2) {order: 1;}
+    .goods > div:nth-child(3) {order: 3;}
+    .goods > div:nth-child(4) {order: 2;}
+    .goods > div:nth-child(5) {order: 4;}
+    .goods > div:nth-child(6) {order: 5;}
+}
+
+.page__text_goods {
     text-align: center;
-    padding: 12px 16px;
+    width: 70%;
 }
 
-.page__header a:hover {
-    border-bottom: 2px solid #fff;
+.page__titles_h2 {
+    text-align: center;
 }

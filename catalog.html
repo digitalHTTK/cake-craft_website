@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CakeCraft - все товары</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/catalog.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/header.css'>
+    <script src="scripts/catalog.js"></script>
+</head>
+<body>
+    <header class="page__header">
+        <p class="header__logo">CakeCraft</p>
+        <nav class="header__nav">
+            <a href="index.html">Главная</a>
+            <a href="allGoods.html">Товары</a>
+            <a href="" class="img-link"><img src="media/images/icons/search.png" width="32" height="32" alt="Поиск"></a>
+            <a href="" class="img-link"><img src="media/images/icons/bascket.png" width="32" height="32" alt="Корзина"></a>
+        </nav>
+    </header>
+
+    <main class="page__catalog">
+
+        <h1 class="page__title">Каталог товаров</h1>
+        <div class="page__filter">
+            <button class="page__filter-button">Фильтры</button>
+            <div class="page__filter_list">
+                <div>
+                    <h3>Вид изделия</h3>
+                    <ul>
+                        <li><input type="checkbox" value="торты" id="cb-cakes">
+                        <label for="cb-cakes">торты</label></li>
+
+                        <li><input type="checkbox" value="эклер" id="cb-ecl">
+                        <label for="cb-ecl">эклер</label></li>
+
+                        <li><input type="checkbox" value="молекулярная кухня" id="cb-mc">
+                        <label for="cb-mc">молекулярная кухня</label></li>
+
+                        <li><input type="checkbox" value="шоколад" id="cb-choc">
+                        <label for="cb-choc">шоколад</label></li>
+
+                        <li><input type="checkbox" value="тарты" id="cb-cokes">
+                        <label for="cb-cokes">тарты</label></li>
+
+                        <li><input type="checkbox" value="конфеты" id="cb-cndy">
+                        <label for="cb-cndy">конфеты</label></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Категория</h3>
+                    <ul>
+                        <li><input type="checkbox" value="детский" id="cb-kid">
+                        <label for="cb-kid">детский</label></li>
+
+                        <li><input type="checkbox" value="день рождения мужчины" id="cb-rlman">
+                        <label for="cb-rlman">день рождения мужчины</label></li>
+
+                        <li><input type="checkbox" value="просто так" id="cb-nm">
+                        <label for="cb-nm">просто так</label></li>
+
+                        <li><input type="checkbox" value="попробовать что-то новое" id="cb-smh">
+                        <label for="cb-smh">попробовать что-то новое</label></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Вкус</h3>
+                    <ul>
+                        <li><input type="checkbox" value="шоколадный" id="cb-choco">
+                        <label for="cb-choco">шоколадный</label></li>
+
+                        <li><input type="checkbox" value="фруктовый" id="cb-fruit">
+                        <label for="cb-fruit">фруктовый</label></li>
+
+                        <li><input type="checkbox" value="сливочный" id="cb-milk">
+                        <label for="cb-milk">сливочный</label></li>
+
+                        <li><input type="checkbox" value="карамельный" id="cb-caram">
+                        <label for="cb-caram">карамельный</label></li>
+
+                        <li><input type="checkbox" value="экспериментальный" id="cb-ext">
+                        <label for="cb-ext">экспериментальный</label></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Цена</h3>
+                    <ul>
+                        <li><input type="checkbox" value="1-250" id="cb-1">
+                        <label for="cb-1">от 1р. до 250р.</label></li>
+
+                        <li><input type="checkbox" value="250-500" id="cb-2">
+                        <label for="cb-2">от 250р. до 500р.</label></li>
+
+                        <li><input type="checkbox" value="500-1000" id="cb-3">
+                        <label for="cb-3">от 500р. до 1000р.</label></li>
+
+                        <li><input type="checkbox" value="1000-10000" id="cb-4">
+                        <label for="cb-4">от 1000р. до 10000р.</label></li>
+
+                        <li><input type="checkbox" value="10000" id="cb-5">
+                        <label for="cb-5">от 10000р.</label></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="page__output">
+            <div class="page__sort">
+                <div class="page__sort-icon"><img src="media/images/icons/sort.png"></div>
+                <div class="page__sort-options">
+                    <div>по алфавиту</div>
+                    <div>по цене</div>
+                    <div>по рейтингу</div>
+                </div>
+            </div>
+            <div class="page__cards">
+                <div class="page__card">
+                    <div class="card__image" style="background-image: url(media/images/photo/cake_1.jpg);"></div>
+                    <div class="card__info">
+                        <div class="card__header">
+                            <h2 class="card__info_title">Торт Blue Choco Drip</h2>
+                            <span class="card__info_price">1500 р./кг</span>
+                        </div>
+                        <div class="card__descr">
+                            <p class="card__info_text">Стильный торт с шоколадным вкусом (используется бельгийский шоколад с 70%-м содержанием какао) и нежным сливочным кремом между коржами. Как опция можно изменить декор или добавить шоколадные украшения для 
+                            любых случаев жизни.</p>
+                            <a href="descr.html" class="card__info_button">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page__card">
+                    <div class="card__image" style="background-image: url(media/images/photo/cake_1.jpg);"></div>
+                    <div class="card__info">
+                        <div class="card__header">
+                            <h2 class="card__info_title">Торт Blue Choco Drip</h2>
+                            <span class="card__info_price">1500 р./кг</span>
+                        </div>
+                        <div class="card__descr">
+                            <p class="card__info_text">Стильный торт с шоколадным вкусом (используется бельгийский шоколад с 70%-м содержанием какао) и нежным сливочным кремом между коржами. Как опция можно изменить декор или добавить шоколадные украшения для 
+                            любых случаев жизни.</p>
+                            <a href="descr.html" class="card__info_button">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page__card">
+                    <div class="card__image" style="background-image: url(media/images/photo/cake_1.jpg);"></div>
+                    <div class="card__info">
+                        <div class="card__header">
+                            <h2 class="card__info_title">Торт Blue Choco Drip</h2>
+                            <span class="card__info_price">1500 р./кг</span>
+                        </div>
+                        <div class="card__descr">
+                            <p class="card__info_text">Стильный торт с шоколадным вкусом (используется бельгийский шоколад с 70%-м содержанием какао) и нежным сливочным кремом между коржами. Как опция можно изменить декор или добавить шоколадные украшения для 
+                            любых случаев жизни.</p>
+                            <a href="descr.html" class="card__info_button">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page__card">
+                    <div class="card__image" style="background-image: url(media/images/photo/cake_1.jpg);"></div>
+                    <div class="card__info">
+                        <div class="card__header">
+                            <h2 class="card__info_title">Торт Blue Choco Drip</h2>
+                            <span class="card__info_price">1500 р./кг</span>
+                        </div>
+                        <div class="card__descr">
+                            <p class="card__info_text">Стильный торт с шоколадным вкусом (используется бельгийский шоколад с 70%-м содержанием какао) и нежным сливочным кремом между коржами. Как опция можно изменить декор или добавить шоколадные украшения для 
+                            любых случаев жизни.</p>
+                            <a href="descr.html" class="card__info_button">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="page__footer">
+        <img src="media/images/main/decor.png" alt="Декор" width="100%" height="100%">
+        <div class="social__media">
+            <a href="vk.com">1</a>
+            <a href="instagram.com">2</a>
+            <a href="twitter.com">3</a>
+        </div>
+        <div class="info__data">123</div>
+    </footer>
+</body>
+</html>
