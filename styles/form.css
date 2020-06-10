@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page__form {
+    padding-top: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.page__title {
+    font-size: 48px;
+    font-weight: 600;
+    position: relative;
+    height: max-content;
+}
+
+.page__title::before {
+    content: "";
+    display: block;
+    width: 232px;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    top: calc(100% + 5px);
+}
+
+.page__title::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: #000;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.page__form-cont {
+    margin-top: 40px;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+.form__text-input ~ input {
+    width: 100%;
+    height: 28px;
+    border: none;
+    background: #E5E5E5;
+    padding-left: 8px;
+    box-sizing: border-box;
+}
+
+.form__rb-cont {
+    display: flex;
+    flex-flow: row;
+}
+
+.form__rb {
+    margin-right: 20px;
+}
+
+.form__done {
+    margin-top: 18px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__done-text, .form__done-value {
+    font-size: 18px;
+}
+
+.form__done-value {
+    font-weight: 600;
+}
+
+.form__done-button {
+    display: block;
+    width: 230px;
+    margin-top: 14px;
+    padding: 3px 0px;
+    background: #FCDA7C;
+    height: max-content;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+.form__done-button:focus {
+    outline: none;
+}
+
+.form__done-button:hover {
+    background: #E5E5E5;
+    transition: 0.2s ease-in;
+}
+
+.form__done-text {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.form__text-input, .form__rb-title {
+    margin-top: 14px;
+}
+
+.form__rb-title {
+    margin-bottom: 4px;
+}
+
+@media screen and (max-width: 600px) {
+    .form__rb-cont {
+        flex-flow: column;
+    }
+    .form__rb {
+        margin-top: 14px;
+    }
+}

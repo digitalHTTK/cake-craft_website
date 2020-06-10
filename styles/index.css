@@ -203,7 +203,6 @@ body {
     justify-content: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, max-content);
-    /* margin: 0% 12% 0% 12%; */
 }
 
 .text__frame_right, .text__frame_left {
@@ -212,6 +211,14 @@ body {
     align-items: center;
     justify-content: center;
     height: 350px;
+}
+
+.text__frame_left {
+    background-color: #FFF6B7;
+}
+
+.text__frame_right {
+    background-color: #FCDA7C;
 }
 
 .bg__container {
@@ -231,14 +238,6 @@ body {
     color: black;
     font-weight: 600;
     font-size: 24px;
-}
-
-.page__footer {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    margin: 50px 160px 90px 160px;
 }
 
 .image__frame_cake {
@@ -263,6 +262,11 @@ body {
     background-position: 50% 20%;
     background-size: cover;
     height: 350px;
+}
+
+.landing__more:hover, .landing__order:hover, .goods__button:hover{
+    background: #E5E5E5;
+    transition: 0.2s ease-in;
 }
 
 @media screen and (max-width: 700px) {
@@ -292,6 +296,26 @@ body {
     .goods > div:nth-child(4) {order: 2;}
     .goods > div:nth-child(5) {order: 4;}
     .goods > div:nth-child(6) {order: 5;}
+
+    .landing__text {
+        font-size: 16px;
+    }
+    .page__text {
+        font-size: 16px;
+    }
+    .page__titles {
+        font-size: 36px;
+    }
+
+    .goods__button {
+        font-size: 18px;
+        width: 232px;
+    }
+
+    .landing__more, .landing__order {
+        font-size: 18px;
+        width: 232px;
+    }
 }
 
 .page__text_goods {

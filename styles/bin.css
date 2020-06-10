@@ -15,7 +15,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.page__product {
+.page__bin {
     padding-top: 100px;
     margin-left: 5%;
     margin-right: 5%;
@@ -26,6 +26,7 @@ body {
     font-weight: 600;
     position: relative;
     height: max-content;
+    margin-bottom: 50px;
 }
 
 .page__title::before {
@@ -48,50 +49,29 @@ body {
     transform: rotate(45deg);
 }
 
-.page__descr {
+.page__order-button-cont {
     display: flex;
     flex-flow: row;
-    margin-top: 50px;
-}
-
-.descr__image {
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-    min-width: 270px;
-    max-width: 270px;
-    height: 270px;
-}
-
-.descr__text {
-    display: flex;
-    flex-flow: column;
-    align-items: flex-start;
-    align-self: center;
+    align-items: center;
     justify-content: center;
-    padding-left: 28px;
-    height: 100%;
 }
 
-.descr__text > p {
-    font-size: 24px;
-}
-
-.descr__text > h2 {
-    font-size: 36px;
-}
-
-.page__makeup {
-    margin: 20px 0px 30px 0px;
+.page__order-button {
+    display: block;
+    width: 300px;
+    padding: 10px 0px;
+    background: #FCDA7C;
+    height: max-content;
+    text-align: center;
+    color: black;
+    border: none;
+    border-radius: none;
+    font-weight: 600;
     font-size: 18px;
+    cursor: pointer;
 }
 
-@media screen and (max-width: 1000px) {
-    .page__descr {
-        flex-flow: column;
-        align-items: center;
-    }
-    .descr__text {
-        padding: 0px;
-    }
+.page__order-button:hover {
+    background: #E5E5E5;
+    transition: 0.2s ease-in;
 }

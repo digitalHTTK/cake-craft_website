@@ -3,34 +3,40 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8">
+    <meta name="keywords" content="торт, торты, молекулярная кухня, cakecraft, cc, эклер, доставка еды, кондитерские изделия, хабаровск, тарт, шоколад">
+    <meta name="description" content="Сайт кондитерской фирмы CakeCraft. Содержимое сайта - информация о производстве, интернет-магазин.">
+    <link rel="canonical" href="index.html">
+    <link rel="SHORTCUT ICON" href="media/images/icons/icon.png" type="image/png">
     <title>CakeCraft - главная</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles/index.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles/header.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/footer.css'>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <script src='scripts/main.js'></script>
 </head>
 
 <body>
     <header class="page__header">
-        <p class="header__logo">CakeCraft</p>
+        <a class="header__logo" href="#head">CakeCraft</a>
         <nav class="header__nav">
-            <a href="#head">Главная</a>
+            <a href="#head" class="header__main-page">Главная</a>
             <a href="catalog.html">Товары</a>
-            <a href="" class="img-link"><img src="media/images/icons/search.png" width="32" height="32" alt="Поиск"></a>
-            <a href="" class="img-link"><img src="media/images/icons/bascket.png" width="32" height="32" alt="Корзина"></a>
+            <a href="search.html"><img class="img-link-search" src="media/images/icons/search.png"alt="Поиск"></a>
+            <a href="bin.html"><img class="img-link-bin" src="media/images/icons/bascket.png" alt="Корзина"></a>
         </nav>
     </header>
 
     <main class="page__main">
-        <div class="landing__part">
+        <div class="landing__part" id="head">
             <h1 class="landing__h1">Мы - первые в Хабаровске</h1>
             <div class="landing__text">создаем десерты с использованием технологий молекулярной кухни</div>
-            <a href ="" class="landing__more">Подробнее</a>
-            <a href="" class="landing__order">Сделать заказ</a>
+            <a href="#au" class="landing__more">Подробнее</a>
+            <a href="#mo" class="landing__order">Сделать заказ</a>
         </div>
 
-        <article class="about__us">
+        <article class="about__us" id="au">
             <h1 class="page__titles">О нас</h1>
             <div class="page__text">CakeCraft производит кондитерскую продукцию начиная с 2017 года. Все это время мы стремились получить наивысшее качество и вкус нашей продукции, и мы смогли добиться этого.</div>
             <div class="deco__element"></div>
@@ -42,7 +48,7 @@
             <img class="gallery__slider" src="media/images/main/image3.jpg" alt="Изображение_галерея" width="50%" height="50%">
         </article>
 
-        <article class="goods">
+        <article class="goods" id="mo">
             <div class="image__frame_cake"></div>
             <div class="text__frame_right">
                 <h2 class="page__titles_h2">Торты</h2>
@@ -60,19 +66,40 @@
             </div>
         </article>
         <div class="bg__container">
-            <a class="goods__button" href="#goods">Посмотреть всё</a>
+            <a class="goods__button" href="catalog.html">Посмотреть всё</a>
         </div>
         
     </main>
 
     <footer class="page__footer">
-        <img src="media/images/main/decor.png" alt="Декор" width="100%" height="100%">
+        <div class="footer__decor"></div>
         <div class="social__media">
-            <a href="https://vk.com">1</a>
-            <a href="https://instagram.com">2</a>
-            <a href="https://twitter.com">3</a>
+            <a href="https://www.vk.com" class="footer__vk"></a>
+            <a href="https://www.instagram.com" class="footer__inst"></a>
+            <a href="https://www.twitter.com" class="footer__twit"></a>
         </div>
-        <div class="info__data">123</div>
+        <div class="info__data">
+            <div>
+                <div class="footer__info-phone-cont">
+                    <div class="footer__info-icon-phone"></div>
+                    <span class="footer__info-text">
+                        (208) 555-0112
+                    </span>
+                </div>
+
+                <div class="footer__info-mail-cont">
+                    <div class="footer__info-icon-mail"></div>
+                    <span class="footer__info-text">
+                        joy.ramos@example.com
+                    </span>
+                </div>
+            </div>
+
+            <div class="footer__adcopy">
+                <div class="footer__address">9408 Elgin St undefined Chandler, Arkansas 59299 United States</div>
+                <div class="footer__copyright">CakeCraft, 2020</div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

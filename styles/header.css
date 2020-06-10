@@ -26,7 +26,7 @@
     padding-right: 20px;
 }
 
-.page__header a {
+.header__nav a {
     display: flex;
     align-items: center;
     height: 90%;
@@ -37,12 +37,32 @@
     box-sizing: border-box;
 }
 
-.page__header .img-link {
+.page__header .img-link-search .img-link-bin {
     color: #fff;
     text-align: center;
 }
 
-.page__header a:hover {
+.header__nav a:hover {
     border-top: 2px solid rgba(0, 0, 0, 0);
     border-bottom: 2px solid #fff;
+}
+
+.header__nav a .img-link-search {
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+
+.header__nav a .img-link-bin {
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .header__nav  a.header__main-page {
+        display: none;
+    }
 }

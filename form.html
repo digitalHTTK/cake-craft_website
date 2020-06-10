@@ -9,10 +9,9 @@
         <meta name="description" content="Сайт кондитерской фирмы CakeCraft. Содержимое сайта - информация о производстве, интернет-магазин.">
         <link rel="canonical" href="index.html">
         <link rel="SHORTCUT ICON" href="media/images/icons/icon.png" type="image/png">
-        <title>CakeCraft - торт Blue Choco Drip</title>
+        <title>CakeCraft - корзина</title>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-        <link rel='stylesheet' type='text/css' media='screen' href='styles/product.css'>
-        <link rel='stylesheet' type='text/css' media='screen' href='styles/card.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='styles/form.css'>
         <link rel='stylesheet' type='text/css' media='screen' href='styles/header.css'>
         <link rel='stylesheet' type='text/css' media='screen' href='styles/footer.css'>
     </head>
@@ -27,38 +26,51 @@
             <a href="bin.html"><img class="img-link-bin" src="media/images/icons/bascket.png" alt="Корзина"></a>
         </nav>
     </header>
+    
+    <main class="page__form">
 
-    <main class="page__product">
+        <h1 class="page__title">Оформление заказа</h1>
 
-        <h1 class="page__title">Описание</h1>
+        <form class="page__form-cont">
+            <label for="f-name" class="form__text-input">Ваше имя</label>
+            <input id="f-name" type="text" placeholder="Иван">
 
-        <div class="page__descr">
-            <div class="descr__image" style="background-image: url(media/images/photo/cake_1.jpg);"></div>
-            <div class="descr__text">
-                <h2>Торт Blue Choco Drip</h2>
-                <p>Стильный торт с шоколадным вкусом (используется бельгийский шоколад с 70%-м содержанием какао) и нежным сливочным кремом между коржами. Как опция можно изменить декор или добавить шоколадные украшения для любых случаев жизни.</p>
+            <label for="l-name" class="form__text-input">Ваша фамилия</label>
+            <input id="l-name" type="text"  placeholder="Иванов">
+
+            <label for="phone" class="form__text-input">Номер телефона</label>
+            <input id="phone" type="tel"  placeholder="+7 900 123-45-67">
+
+            <label for="address" class="form__text-input">Адрес доставки</label>
+            <input id="address" type="text" placeholder="ул. Ленина 1, кв. 1">
+
+            <label class="form__rb-title">Выберите способ оплаты</label>
+            <div class="form__rb-cont">
+                <label class="form__rb">
+                    <input type="radio" name="payment">
+                    Оплата онлайн через Сбербанк Онлайн
+                </label>
+                <label class="form__rb">
+                    <input type="radio" name="payment">
+                    Оплата наличными на месте
+                </label>
+                <label class="form__rb">
+                    <input type="radio" name="payment">
+                    Безналичная оплата на месте
+                </label>
             </div>
-        </div>
 
-        <p class="page__makeup">Состав: amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-
-        <div class="page__cards">
-            <div class="page__card">
-                <div class="card__image" style="background-image: url(media/images/photo/cake_1.jpg);"></div>
-                <div class="card__other">
-                    <h3>Торт Blue Choco Drip</h3>
-                    <h4>1500 р./кг</h4>
-                    <input type="number" value="1" class="card__count">
-                    <div>
-                        <div>
-                            <span class="card__text">Итого:</span>
-                            <span class="card__value">8000 р.</span>
-                        </div>
-                        <button class="card__add-cart">В корзину</button>
+            <div class="form__done">
+                <div>
+                    <div class="form__done-text">
+                        <span class="form__done-text">К оплате:</span>
+                        <span class="form__done-value">8000 р.</span>
                     </div>
+                    <a class="form__done-button" href="error.html">Оставить заявку</a>
                 </div>
             </div>
-        </div>
+        </form>
+        
     </main>
 
     <footer class="page__footer">
@@ -92,5 +104,4 @@
         </div>
     </footer>
 </body>
-
 </html>

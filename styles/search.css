@@ -8,6 +8,8 @@
     background-size: contain;
     background-repeat: no-repeat;
     box-sizing: border-box;
+    font-size: 24px;
+    color: #5A6064;
 }
 
 .page__searchbar:focus {
