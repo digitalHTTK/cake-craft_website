@@ -193,8 +193,8 @@ body {
 }
 
 .gallery__slider {
-    width: 60%;
-    height: 60%;
+    width: 720px;
+    height: 405px;
     margin-top: 64px;
 }
 
